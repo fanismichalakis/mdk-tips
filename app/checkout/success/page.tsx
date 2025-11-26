@@ -1,5 +1,6 @@
 'use client'
 
+import { Suspense } from 'react'
 import { useCheckoutSuccess } from '@moneydevkit/nextjs'
 import { BitcoinIcon, CornerDownLeftIcon } from 'lucide-react'
 
@@ -25,7 +26,7 @@ const LoadingPage = () => (
     </div>
 )
 
-export default function SuccessPage() {
+function SuccessContent() {
   const { isCheckoutPaidLoading, isCheckoutPaid, metadata } = useCheckoutSuccess()
 
   if (isCheckoutPaidLoading || isCheckoutPaid === null) {
@@ -41,6 +42,14 @@ export default function SuccessPage() {
 
   return (
     <ReceivedPage />
+  )
+}
+
+export default function SuccessPage() {
+  return (
+    <Suspense fallback={<LoadingPage />}>
+      <SuccessContent />
+    </Suspense>
   )
 }
 
