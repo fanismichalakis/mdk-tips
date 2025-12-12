@@ -9,21 +9,21 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@moneydevkit/lightning-js": "0.1.52",
-    "@moneydevkit/nextjs": "0.1.19",
-    "lucide-react": "0.555.0",
-    "next": "16.0.7",
-    "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "@moneydevkit/lightning-js": "0.1.54",
+    "@moneydevkit/nextjs": "0.2.0",
+    "lucide-react": "0.560.0",
+    "next": "16.0.10",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.1.17",
-    "@types/node": "24.10.1",
+    "@tailwindcss/postcss": "4.1.18",
+    "@types/node": "25.0.1",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.1",
-    "eslint-config-next": "16.0.4",
-    "tailwindcss": "4.1.17",
+    "eslint-config-next": "16.0.10",
+    "tailwindcss": "4.1.18",
     "typescript": "5.9.3"
   },
   "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4"
